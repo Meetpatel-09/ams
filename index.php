@@ -1,6 +1,8 @@
 <?php
      $title = "Home";
      include "masterPage/header.php";
+     $_SESSION = array();
+     session_destroy();
 ?>
 
           <div class="col-md-1">
