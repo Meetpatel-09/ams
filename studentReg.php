@@ -178,7 +178,7 @@
                     <div class="thumbnail">
                     <form action="" method="post" enctype="multipart/form-data">
                          <div class="caption text-center">
-                              <h3>Student Registration</h3>
+                              <h2>Student Registration</h2>
                          </div>    
                          <div class="col-md-12">
                               <h6>Full Name</h6>

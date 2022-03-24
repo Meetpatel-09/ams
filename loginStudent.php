@@ -84,7 +84,7 @@
                     <div class="thumbnail">
                     <form action="" method="post">
                          <div class="caption text-center">
-                              <h3>Student Log In</h3>
+                              <h2>Student Log In</h2>
                          </div>    
                          <h6>Enrollment number</h6>
                          <input class="form-control" id="exampleInputEmail1" name="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Enrollment">

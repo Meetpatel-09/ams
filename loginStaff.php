@@ -84,7 +84,7 @@
                     <div class="thumbnail">
                     <form action="" method="post">
                          <div class="caption text-center">
-                              <h3>Staff Log In</h3>
+                              <h2>Staff Log In</h2>
                          </div>
                          <h6>Email</h6>
                          <input type="email" class="form-control" id="exampleInputEmail1" name="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">

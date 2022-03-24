@@ -22,6 +22,20 @@ session_start();
                <script src="js/respond.min.js"></script>
           <![endif]-->
           <script type="text/javascript" src="js/site.min.js"></script>
+
+          <style type="text/css">
+               th {
+                    color: #ffffff;
+               } 
+
+               td {
+                    color: #ffffff;
+               } 
+               
+               h3 {
+                    color: #ffffff;
+               }
+          </style>
      </head>
 
      <body style="background-color: #4A89DC;">
