@@ -1,9 +1,21 @@
 <?php
 	$title = "Home";
-?>
-<?php
+
 	require_once "config.php";
 	include ('masterPage/header.php');
+
+	function function_alert($message) {
+          // Display the alert box 
+          echo "<script>alert('$message');</script>";
+     }
+ 	// Function call
+     // function_alert("Welcome to Geeks for Geeks");
+
+	if (isset($_SESSION['added'])) {
+		$msg = $_SESSION['added'];
+		unset($_SESSION['added']);
+		function_alert($msg);
+	}
 
 	if (isset($_SESSION['adminEmail'])) {
 ?>
