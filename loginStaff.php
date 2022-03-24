@@ -1,16 +1,10 @@
 <?php
 
+ob_start();
      $title = "Log In";
-     include "masterPage/header.php";
-
-	// Check if staff is already logged in
-	if(isset($_SESSION['staffEmail'])) {
-		header("location: staffHome.php");
-		exit;
-	}
-
      require_once "config.php";
-
+     include "masterPage/header.php";
+     
      function function_alert($message) {
           // Display the alert box 
           echo "<script>alert('$message');</script>";

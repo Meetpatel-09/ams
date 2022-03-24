@@ -1,8 +1,8 @@
 <?php
+ob_start();
 
      $title = "Registration";
      include "masterPage/header.php";
-     ob_start();
      require_once "config.php";
 
      function function_alert($message) {

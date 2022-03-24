@@ -1,8 +1,7 @@
 <?php
-
+     ob_start();
      $title = "Log In";
      include "masterPage/header.php";
-
 	// Check if student is already logged in
 	if(isset($_SESSION['studentEmail'])) {
 		header("location: studentHome.php");

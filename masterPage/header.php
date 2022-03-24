@@ -1,7 +1,3 @@
-<?php
-session_start();
-?>
-
 <!DOCTYPE html>
 <html>
      <head>
@@ -24,6 +20,21 @@ session_start();
           <script type="text/javascript" src="js/site.min.js"></script>
 
           <style type="text/css">
+               .style1 {
+                    width: 100%;
+               }
+               .style2 {
+                    text-align: center;
+                    width: 50px;
+               }
+               .style3 {
+                    text-align: center;
+                    width: 183px;
+                    height: 50px;
+               }
+               .style4 {
+                    text-align: center;
+               }
                th {
                     color: #ffffff;
                } 
@@ -35,6 +46,7 @@ session_start();
                h3 {
                     color: #ffffff;
                }
+               
           </style>
      </head>
 
@@ -49,6 +61,8 @@ session_start();
                <span class="icon-bar"></span>
                </button>
                <?php 
+                    session_start();
+                    // echo $_SESSION['adminEmail'];
                     if(isset($_SESSION['adminEmail'])) { // means Admin is logged in
                ?>
                     <a class="navbar-brand" href="adminHome.php">AMS</a>
@@ -91,11 +105,9 @@ session_start();
                                    }
                               ?>
                          </li>
-
                          <?php
                               if(!isset($_SESSION['loggedin'])) {
                          ?>
-
                          <li class="dropdown">
                               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Log In <b class="caret"></b></a>
                               <ul class="dropdown-menu" role="menu">
@@ -104,13 +116,13 @@ session_start();
                                    <li><a href="loginStudent.php">Student</a></li>
                               </ul>
                          </li>
-                         <li class="dropdown">
+                         <!-- <li class="dropdown">
                               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Register <b class="caret"></b></a>
                               <ul class="dropdown-menu" role="menu">
                                    <li><a href="staffReg.php">Staff</a></li>
                                    <li><a href="studentReg.php">Student</a></li>
                               </ul>
-                         </li>
+                         </li> -->
 
                          <?php
                               } else {

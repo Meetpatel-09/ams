@@ -1,14 +1,7 @@
 <?php
-
+ob_start();
      $title = "Log In";
      include "masterPage/header.php";
-
-	// Check if admin is already logged in
-	if(isset($_SESSION['adminEmail'])) {
-		header("location: adminHome.php");
-		exit;
-	}
-    
      require_once "config.php";
 
      function function_alert($message) {
@@ -58,7 +51,7 @@
 							$_SESSION["adminEmail"] = $email;
 							$_SESSION["adminId"] = $id;
 							$_SESSION["loggedin"] = true;
-
+                                   
 							//Redirect admin to admin home page
 							header("location: adminHome.php");
 
