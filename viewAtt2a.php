@@ -77,19 +77,19 @@
                             <?php
                                 if(isset($_SESSION['adminEmail'])) {
                             ?>
-                                <a href="adminHome.php" class="btn btn-primary" style="margin-left: 200px;">Back</a>
+                                <a href="adminHome.php" class="btn btn-primary" style="margin-left: 100px;">Back</a>
                             <?php
                                 } else if(isset($_SESSION['staffEmail'])) {
                             ?>
-                                <a href="staffHome.php" class="btn btn-primary" style="margin-left: 200px;">Back</a>
+                                <a href="staffHome.php" class="btn btn-primary" style="margin-left: 100px;">Back</a>
                             <?php
                                 }  else if(isset($_SESSION['studentEmail'])) { 
                             ?>
-                                <a href="studentHome.php" class="btn btn-primary" style="margin-left: 200px;">Back</a>
+                                <a href="studentHome.php" class="btn btn-primary" style="margin-left: 100px;">Back</a>
                                 <?php
                             } else { 
                             ?>
-                                <a href="index.php" class="btn btn-primary" style="margin-left: 200px;">Back</a>
+                                <a href="index.php" class="btn btn-primary" style="margin-left: 100px;">Back</a>
                             <?php
                                 }
                             ?>

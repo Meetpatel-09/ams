@@ -21,7 +21,9 @@
 	if(isset($_SESSION["noinslot"])) {
 		if($_SESSION['noinslot'] == 1) {
 			$inputLectureNumber = 2;
-		} 
+		} else {
+			$inputLectureNumber = 1;
+		}
 	}
 	else {
 		$inputLectureNumber = 1;
