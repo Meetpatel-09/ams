@@ -38,7 +38,7 @@
             $staff = $row1['f_name'];
         }
 
-	    $sql = mysqli_query($conn, "SELECT * FROM timetable WHERE branch = '$b_name' AND semester = '$semester' AND division = '$division' AND day = '$day'");
+	    $sql = mysqli_query($conn, "SELECT * FROM timetable WHERE branch = '$b_name' AND semester = '$semester' AND division = '$division' AND day = '$day' AND subject = '$subjects'");
        
         while($row = mysqli_fetch_array($sql)) {
             if($row['slot_number'] == $slotNumber) {

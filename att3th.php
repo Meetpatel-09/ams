@@ -40,7 +40,7 @@
         
         $flag = 0;
 
-	    $sql = mysqli_query($conn, "SELECT * FROM timetable WHERE branch = '$b_name' AND semester = '$semester' AND division = '$division' AND day = '$day'");
+	    $sql = mysqli_query($conn, "SELECT * FROM timetable WHERE branch = '$b_name' AND semester = '$semester' AND division = '$division' AND day = '$day' AND subject = '$subjects'");
        
         while($row = mysqli_fetch_array($sql)) {
             if($row['slot_number'] == $slotNumber) {
@@ -81,6 +81,7 @@
                                     if(mysqli_stmt_execute($stmt)) {
                                         header("location: att4th.php");
                                     } else {
+                                        echo "error";
                                        // header("location: att4err.php");
                                     }
                                 

@@ -204,7 +204,8 @@
 						}
 					}
 					if($row['no_in_slot'] == 2 || $row['no_in_slot'] == 3) {	
-						if ($row['no_of_batch'] == 4) {
+						
+						// if ($row['no_of_batch'] == 4) {
 							if ($row['batch'] == 1) {
 								$monpr12b1 = abbreviate($row['subject']);
 							}
@@ -217,7 +218,7 @@
 							if ($row['batch'] == 4) {
 								$monpr12b4 = abbreviate($row['subject']);
 							}
-						}
+						// }
 					}
 				}	
 			} // slot 
